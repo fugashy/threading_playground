@@ -24,3 +24,9 @@ add_executable(${PROJECT_NAME}_multi_parallel
 target_link_libraries(${PROJECT_NAME}_multi_parallel
   ${PROJECT_NAME}
 )
+add_executable(${PROJECT_NAME}_chainable_thread
+  src/threading_playground/chainable_thread.cpp
+)
+target_link_libraries(${PROJECT_NAME}_chainable_thread
+  ${PROJECT_NAME}
+)
